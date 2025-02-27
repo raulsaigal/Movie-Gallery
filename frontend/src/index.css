@@ -1,0 +1,179 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Light Mode */
+
+
+body {
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    background-image:url("/public/images/batman.jpg");
+    background-size: cover;
+  background-position: center;
+    /* background-color: #e23c09;
+    background-image: linear-gradient(160deg, #e23c09 0%, #1e2422 100%);
+     */
+    /* background-color: white; */
+    color: black;
+  }
+  
+  /* Dark Mode */
+  body.dark {
+    background-color: #1a202c;
+    color: white;
+  }
+  
+  /* Movie Cards */
+  .movie-card {
+    background-color: rgba(79, 79, 79, 0.527);
+    color: rgb(13, 198, 90);
+    transition: background-color 0.3s;
+  }
+  
+  .dark .movie-card {
+    background-color: #181818;
+    color: rgb(17, 231, 113);
+  }
+  
+  /* Buttons */
+  button {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .dark button {
+    background-color: #4a5568;
+    color: white;
+  }
+  
+  .dark button:hover {
+    background-color: #2d3748;
+  }
+  
+  /* Light Mode */
+input {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Dark Mode */
+  .dark input {
+    background-color: #2d3748; /* Dark gray background */
+    color: white; /* White text */
+    border: 1px solid #4a5568; /* Dark border */
+  }
+  
+  .dark input::placeholder {
+    color: #a0aec0; /* Lighter gray for placeholder text */
+  }
+  
+  .dark select{
+    background-color: #2d3748;
+    color: white;
+  }
+ 
+  .dark .WatchList h1{
+    color: #1a5fd6;
+  }
+
+  .share-buttons {
+    display: flex;
+    gap: 1px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  
+  /* .share-buttons button { */
+    /* background-color: #6d95bfb4;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px; */
+    /* display: flex;
+  align-items: center;
+  gap: 1px;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white; */
+  /* } */
+
+  .share-buttons a,
+.share-buttons button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+  
+  /* .share-buttons button:hover {
+   color:rgb(0, 179, 6)rgba(0, 179, 6, 0.797)
+  } */
+   .whatsapp {
+     /* background-color: #22b154af; */
+   }
+  
+  /* .twitter {
+    background-color: #1da0f2c1;
+  }
+  
+  .facebook {
+    background-color: #1876f2ba;
+  } */
+   
+  .whatsapp:hover {
+    /* background-color: #1bb451ca; */
+    color: #1ad662;
+  }
+  
+  .twitter:hover {
+    color: #0c85d0;
+  }
+  
+  .facebook:hover {
+    color: #1a47eb;
+  }
+
+  /* .copy {
+    background-color: #4CAF50;
+  } */
+  
+  .copy:hover {
+    color: #58dd15;
+  }
+
+  .filter-container {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .filter-container label {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .filter-container select {
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
