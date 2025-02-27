@@ -9,7 +9,7 @@ const [loading, setLoading] = useState(false);
 
 const fetchTrailer = async (movieTitle) => {
   try {
-    const response = await axios.get(`http://localhost:5000/api/search`, {
+    const response = await axios.get(`https://movie-gallery-fbwk.onrender.com/api/search`, {
       params: { query: `${movieTitle} official trailer` },
     });
 
