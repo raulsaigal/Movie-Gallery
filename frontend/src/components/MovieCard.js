@@ -97,7 +97,7 @@ const { Title, Year, imdbID, Poster } = movie;
       <img
         src={movie.Poster && movie.Poster !== "N/A" ? movie.Poster : "https://via.placeholder.com/300"}
         alt={movie.Title || "No Title"}
-        className="w-full h-64 object-cover rounded-lg"
+        className="w-full h-[28rem] object-cover rounded-lg"
       />
 
        {/* ✅ YouTube Trailer */}
